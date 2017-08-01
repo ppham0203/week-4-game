@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Content!</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1><font color="white">Poke Collector!</font></h1>
+    <p><font color="white">Rules:<br>You will be given a random number at the start of the game.</p>
+    <p>There are four Pokemon below. By clicking on a Pokemon you will add a specific amount of points to your total score.</p>
+<p>You will win the game by matching your total score to random number, you lose the game if your total score goes above tha random number</p>
+<p>The value of each Pokemon is hidden from you until you click on it.</p>
+<p>Each time when the game starts, the game will change the value of each Pokemon.</font></p>
+  
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-4">
+<h2>Random Number: <span id="number-to-guess"> </span></h2>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h2> Wins: <span id="wincount"> </span></h2><br>
+            <h2> Losses: <span id="losscount"> </span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+  <div class="col-sm-8">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-3"
+    <a href="#">
+      <img id="squirtle" src="assets/images/squirtle.png" class="responsive" alt="5points"/></a></div>
+  <div class="col-sm-3"
+      <a href="#"> <img id="charmander" src="assets/images/charmander.png" class="responsive" alt=""/></a></div>
+  <div class="col-sm-3"
+        <a href="#">
+          <img id="bulbasaur" src="assets/images/bulbasaur.png" class="responsive" alt="..."/></a></div>
+  <div class="col-sm-3"
+          <a href="#">
+            <img id="pikachu" src="assets/images/pikachu.jpg" class="responsive" alt="..."/></a></div>
+
+  </div>
+</div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Your Total Score is:</h3>
+  </div>
+  <div class="panel-body">
+    <p id="sumscore"> 0 </p>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
